@@ -1,12 +1,11 @@
-import { Link, Outlet } from "react-router";
+import { useParams } from "react-router"
 
 export default function Survey() {
+    const { questionNumber } = useParams()
     return (
         <div>
             <h1>Questionnaire 🧮</h1>
-            <Link to="client">Questionnaire Client</Link>
-            <Link to="freelance">Questionnaire Freelance</Link>
-            <Outlet />
+            <h2>Question {questionNumber}</h2>
         </div>
     )
 }
