@@ -3,8 +3,7 @@ import './App.css';
 function App() {
     return (
         <>
-            Bonjour
-
+            <h1>Home</h1>
         </>
     );
 }
